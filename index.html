@@ -28,7 +28,7 @@
     <header class="bg-orange-600 p-8 shadow-lg"> <!-- Cor principal da marca -->
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-3xl font-bold text-white mb-2">Por que não consigo configurar Rede Mesh no Roteador Brisanet?</h1>
-            <p class="text-lg text-orange-100">Ajuda o setor de suporte</p>
+            <p class="text-lg text-orange-100">Guia completo para atendentes de suporte</p>
         </div>
     </header>
 
@@ -133,6 +133,70 @@
             </div>
         </section>
 
+        <!-- NOVA SEÇÃO: Tutorial de Configuração -->
+        <section class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="flex items-center p-5 border-b border-gray-200 bg-gray-50">
+                <!-- Ícone de Tutorial/Clipboard -->
+                <svg class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v8.25A2.25 2.25 0 0 0 6 16.5h2.25m8.25-8.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-7.5A2.25 2.25 0 0 1 8.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 0 0-2.25 2.25v6" />
+                </svg>
+                <h2 class="text-2xl font-semibold text-gray-900">Tutorial: Auxiliando na Configuração do Roteador Particular</h2>
+            </div>
+            
+            <div class="p-6 space-y-6">
+                <!-- Disclaimer para o Atendente -->
+                <div class="bg-gray-200 border-l-4 border-gray-400 text-gray-700 p-4 rounded-md">
+                    <h4 class="font-bold">Aviso para o Atendente:</h4>
+                    <p>Este é um guia de <strong>suporte de boa-fé</strong>. Lembre ao cliente que a Brisanet não é responsável pela configuração de equipamentos de terceiros. Nós não podemos acessar o roteador particular do cliente.</p>
+                </div>
+
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Passos para Orientar o Cliente:</h3>
+
+                <ol class="list-decimal list-inside space-y-4 text-gray-700">
+                    <li>
+                        <strong>Preparação Física:</strong>
+                        <ul class="list-disc list-outside pl-8 mt-2 space-y-1">
+                            <li>Peça ao cliente para localizar a <strong>ONT</strong> (o modem da fibra) da Brisanet.</li>
+                            <li>Solicite que ele <strong>desconecte o roteador antigo da Brisanet</strong> da ONT (se houver um).</li>
+                            <li>Instrua o cliente a conectar o <strong>roteador principal do kit mesh</strong> na ONT. O cabo de rede deve sair da porta <strong>LAN1 da ONT</strong> e entrar na porta <strong>"WAN"</strong> ou <strong>"Internet"</strong> (geralmente marcada com um ícone de globo 🌐) do novo roteador.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Configuração pelo Aplicativo:</strong>
+                        <ul class="list-disc list-outside pl-8 mt-2 space-y-1">
+                            <li>A maioria dos sistemas mesh (TP-Link Deco, Intelbras Twibi, Google WiFi) é configurada por um <strong>aplicativo de celular</strong>. Peça ao cliente para baixar o app oficial do fabricante do seu roteador.</li>
+                            <li>Instrua o cliente a seguir as instruções do aplicativo para detectar o novo roteador principal.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Tipo de Conexão (Obrigatório DHCP):</strong>
+                        <ul class="list-disc list-outside pl-8 mt-2 space-y-1">
+                            <li>No momento em que o aplicativo perguntar o "Tipo de Conexão" ou "Tipo de Internet", oriente o cliente a selecionar <strong>"IP Dinâmico"</strong> ou <strong>"DHCP"</strong>.</li>
+                            <li>É muito importante que ele <strong>não</strong> selecione "PPPoE", "IP Estático" ou "Bridge". A rede Brisanet autentica o roteador automaticamente via DHCP.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Criação da Nova Rede WiFi:</strong>
+                        <ul class="list-disc list-outside pl-8 mt-2 space-y-1">
+                            <li>O aplicativo solicitará que o cliente crie um <strong>novo nome de rede (SSID)</strong> e uma <strong>nova senha</strong>. Esta será a rede mesh que cobrirá toda a casa.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Adição dos Outros Roteadores (Nós):</strong>
+                        <ul class="list-disc list-outside pl-8 mt-2 space-y-1">
+                            <li>Após o roteador principal estar online e com internet, o aplicativo guiará o cliente para ligar os outros dispositivos (nós ou satélites) em outros cômodos para expandir a rede.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Verificação Final:</strong>
+                        <ul class="list-disc list-outside pl-8 mt-2 space-y-1">
+                            <li>Peça ao cliente para conectar um celular ou notebook à <strong>nova rede WiFi mesh</strong> e verificar se a internet está funcionando.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
     </main>
 
     <!-- Rodapé -->
@@ -148,4 +212,3 @@
 
 </body>
 </html>
-
